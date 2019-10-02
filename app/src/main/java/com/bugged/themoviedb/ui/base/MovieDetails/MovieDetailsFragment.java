@@ -83,7 +83,7 @@ public class MovieDetailsFragment extends BaseFragment implements MovieDetailsVi
 
     private void setValues(Movie movie) {
         tv_movie_name.setText(movie.getTitle());
-        Picasso.with(getActivity()).load(ConstantUtils.HOST_NAME1+movie.getPoster_path()).into(iv_poster);
+        Picasso.with(getActivity()).load(ConstantUtils.HOST_NAME_IMAGE+movie.getPoster_path()).into(iv_poster);
         popularity_value_tv.setText(movie.getPopularity());
         language_value_tv.setText(movie.getOriginal_language());
         release_date_value_tv.setText(movie.getRelease_date());

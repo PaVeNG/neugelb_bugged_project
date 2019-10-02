@@ -48,7 +48,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.ViewHolder
         holder.bind(movieListFiltered.get(position), listener);
         holder.item_movie_release_date.setText(movieListFiltered.get(position).getRelease_date());
         holder.item_movie_title.setText(movieListFiltered.get(position).getTitle());
-        Picasso.with(mContext).load(ConstantUtils.HOST_NAME1+movieListFiltered.get(position).getPoster_path()).into(holder.item_movie_poster);
+        Picasso.with(mContext).load(ConstantUtils.HOST_NAME_IMAGE+movieListFiltered.get(position).getPoster_path()).into(holder.item_movie_poster);
         holder.item_movie_rating.setText(String.valueOf(movieListFiltered.get(position).getVote_average()));
     }
 
